@@ -1,0 +1,471 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: Majalla;
+  src: url(../fonts/majalla.ttf);
+}
+
+@font-face {
+  font-family: Sans-Pro;
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+body {
+  position: relative;
+}
+
+body header {
+  padding-top: 25px;
+}
+
+body header .second-logo img {
+  height: 70px;
+  width: auto;
+}
+
+body header .main-logo img {
+  display: none;
+}
+
+body .hero-box {
+  margin-top: 120px;
+}
+
+body .hero-box .hero-title {
+  font-family: 'Permanent Marker', cursive;
+  color: #fff;
+  font-size: 44px;
+  text-shadow: 0 0 12.5px rgba(80, 76, 168, 0.77);
+  letter-spacing: 1px;
+}
+
+body .hero-box .description {
+  margin-top: 15px;
+  padding-left: 35px;
+  padding-right: 120px;
+}
+
+body .hero-box .description p {
+  color: #fff;
+  font-size: 23px;
+  font-family: Majalla;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+body .hero-box h4 {
+  margin-top: 35px;
+  color: #a82c33;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .hero-box .social-list {
+  position: absolute;
+  bottom: 30px;
+  left: 120px;
+}
+
+body .hero-box .social-list .social {
+  display: inline;
+  margin-right: 30px;
+  background-color: #a82c33;
+  padding: 12px 12px 9px;
+}
+
+body .hero-box .social-list .social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body .hero-box .social-list .social a i {
+  font-size: 20px;
+}
+
+body .hero-box .social-list .page {
+  display: inline;
+  margin-right: 15px;
+  background-color: #a82c33;
+  padding: 10px 6px;
+}
+
+body .hero-box .social-list .page a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+body .hero-box .social-list .address {
+  padding-top: 10px;
+}
+
+body .hero-box .social-list .address h6 {
+  color: #fff;
+  font-size: 14px;
+  font-family: Sans-Pro;
+}
+
+body .hero-box .page-center {
+  display: none;
+}
+
+body .internal-header .second-logo .menu-icons {
+  margin-top: 25px;
+}
+
+body .internal-header .second-logo a {
+  color: #fff;
+  background-color: #a82c33;
+  padding: 8px 10px;
+}
+
+body .internal-header .internal-main-logo {
+  margin-top: 55px;
+}
+
+body .internal-header .internal-main-logo img {
+  width: 385px;
+  height: auto;
+}
+
+body .lower-header h4 {
+  margin-top: 30px;
+  color: #a82c33;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .internal-content p {
+  color: #fff;
+  font-family: majalla;
+  font-size: 18px;
+  padding-right: 60px;
+  line-height: 1.2;
+}
+
+body .personal-details {
+  margin-top: 40px;
+  padding-right: 80px;
+  color: #fff;
+}
+
+body .personal-details h5 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+body .personal-details .name {
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+
+body .personal-details .role {
+  margin-left: 30px;
+}
+
+body .personal-details .email {
+  margin-left: 40px;
+}
+
+@media (min-width: 301px) and (max-width: 767px) {
+  body {
+    height: 100vh !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  body header .main-logo {
+    padding-top: 20px;
+  }
+  body header .main-logo img {
+    display: unset;
+    width: 150px;
+    height: auto;
+  }
+  body .hero-box {
+    margin-top: 50px;
+  }
+  body .hero-box .hero-title {
+    margin-top: 25px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  body .hero-box .description {
+    padding: 0px;
+  }
+  body .hero-box .description p {
+    font-size: 26px;
+  }
+  body .hero-box h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  body .hero-box .social-list {
+    left: 45px;
+    bottom: 10px;
+  }
+  body .hero-box .address {
+    text-align: center;
+  }
+  .internal-body {
+    height: auto !important;
+  }
+  .internal-body .internal-header .internal-main-logo {
+    margin-top: 20px !important;
+  }
+  .internal-body .internal-header .internal-main-logo img {
+    width: 150px !important;
+  }
+  .internal-body .lower-header {
+    text-align: center !important;
+  }
+  .internal-body .lower-header h4 {
+    font-size: 25px;
+  }
+  .internal-body .internal-content {
+    text-align: center;
+  }
+  .internal-body .internal-content p {
+    padding-right: 0px !important;
+  }
+  .internal-body .personal-details {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .internal-body .personal-details .name {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .internal-body .personal-details .role {
+    margin-left: 10px;
+  }
+  .internal-body .personal-details .email {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 480px) {
+  .social-list {
+    bottom: 55px !important;
+    left: 80px !important;
+  }
+  .social-list h6 {
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 550px) {
+  .social-list {
+    bottom: 55px !important;
+    left: 130px !important;
+  }
+  .social-list h6 {
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-repeat: round !important;
+    background-size: cover !important;
+  }
+  body .hero-box {
+    text-align: center;
+    margin-top: 330px;
+  }
+  body .hero-box .description {
+    margin-top: 25px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  body .hero-box .description p {
+    font-size: 28px;
+  }
+  body header .main-logo {
+    padding-top: 20px;
+  }
+  body header .main-logo img {
+    display: none;
+    width: 150px;
+    height: auto;
+  }
+  .social-list {
+    bottom: 55px !important;
+    left: 300px !important;
+  }
+  .internal-header .internal-main-logo {
+    margin-top: 20px !important;
+  }
+  .internal-header .internal-main-logo img {
+    width: 150px !important;
+  }
+  .lower-header {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+  .internal-content {
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .internal-body {
+    background-repeat: round !important;
+    background-size: cover !important;
+  }
+  .internal-body .internal-header .internal-main-logo {
+    margin-top: 20px !important;
+  }
+  .internal-body .internal-header .internal-main-logo img {
+    width: 285px !important;
+  }
+  .personal-details {
+    margin-bottom: 20px;
+  }
+  .lower-header h4 {
+    margin-top: 50px !important;
+  }
+  .hero-box {
+    margin-top: 85px !important;
+  }
+  .hero-box .hero-title {
+    font-size: 36px !important;
+  }
+  .hero-box .description p {
+    font-size: 21px !important;
+  }
+  .hero-box h4 {
+    font-size: 25px !important;
+  }
+  .internal-content {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1281px) {
+  .internal-body {
+    background-repeat: round !important;
+    background-size: cover !important;
+  }
+  .lower-header h4 {
+    margin-top: 45px !important;
+  }
+  .hero-box {
+    margin-top: 165px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .personal-details div {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .internal-main-logo img {
+    width: 70px !important;
+  }
+  .internal-content .person-img {
+    width: 80% !important;
+    height: auto !important;
+  }
+  .internal-content .qr-img {
+    width: 40% !important;
+    height: auto !important;
+    margin: 15px auto;
+  }
+  body {
+    height: 100vh !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  body header .main-logo {
+    padding-top: 10px;
+  }
+  body header .main-logo img {
+    display: unset;
+    width: 90px;
+    height: auto;
+  }
+  body header .second-logo img {
+    height: 50px;
+  }
+  body .hero-box {
+    margin-top: 50px;
+  }
+  body .hero-box .hero-title {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+  body .hero-box .description {
+    padding: 0px;
+  }
+  body .hero-box .description p {
+    font-size: 22px;
+  }
+  body .hero-box h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  body .hero-box .social-list {
+    left: 45px;
+    bottom: 10px;
+  }
+  body .hero-box .social-list .social {
+    margin-right: 5px;
+  }
+  body .hero-box .address {
+    text-align: center;
+    margin-right: 40px;
+  }
+  .internal-body {
+    height: auto !important;
+  }
+  .internal-body .internal-header .internal-main-logo {
+    margin-top: 10px !important;
+  }
+  .internal-body .internal-header .internal-main-logo img {
+    width: 90px !important;
+  }
+  .internal-body .second-logo img {
+    height: 50px !important;
+  }
+  .internal-body .lower-header {
+    text-align: center !important;
+  }
+  .internal-body .lower-header h4 {
+    font-size: 25px;
+  }
+  .internal-body .internal-content {
+    text-align: center;
+  }
+  .internal-body .internal-content p {
+    padding-right: 0px !important;
+  }
+  .internal-body .personal-details {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .internal-body .personal-details .name {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .internal-body .personal-details .role {
+    margin-left: 10px;
+  }
+  .internal-body .personal-details .email {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

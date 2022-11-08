@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Majalla;
+    src: url(../fonts/majalla.ttf);
+}
+@font-face {
+    font-family: Sans-Pro;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+body{
+    position: relative;
+    header{
+        padding-top: 25px;
+        .second-logo{
+            img{
+                height: 70px;
+                width: auto;
+            }
+        }
+        .main-logo{
+            img{
+                display: none;
+            }
+        }
+    }
+    .hero-box{
+        margin-top: 120px;
+        .hero-title{
+            font-family: 'Permanent Marker', cursive;
+            color: #fff;
+            font-size: 44px;
+            text-shadow: 0 0 12.5px rgba(80, 76, 168, 0.77);
+            letter-spacing: 1px;
+        }
+        .description{
+            margin-top: 15px;
+            p{
+                color: #fff;
+                font-size: 23px;
+                font-family: Majalla;
+                line-height: 1.2;
+                font-weight: 100;
+            }
+            padding-left: 35px;
+            padding-right: 120px;
+        }
+        h4{
+            margin-top: 35px;
+            color: #a82c33;
+            font-weight: 500;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .social-list{
+            position: absolute;
+            bottom: 30px;
+            left: 120px;
+            .social{
+                display: inline;
+                margin-right: 30px;
+                background-color: #a82c33;
+                padding: 12px 12px 9px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    i{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .page{
+                display: inline;
+                margin-right: 15px;
+                background-color: #a82c33;
+                padding: 10px 6px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
+            .address{
+                padding-top: 10px;
+                h6{
+                color: #fff;
+                font-size: 14px;
+                font-family: Sans-Pro;
+                }
+            }
+        }
+        .page-center{
+            display: none;
+        }
+    }
+
+    .internal-header{
+        .second-logo{
+            .menu-icons{
+                margin-top: 25px;
+            }
+            a{
+                color: #fff;
+                background-color: #a82c33;
+                padding: 8px 10px;
+            }
+        }
+        .internal-main-logo{
+            margin-top: 55px;
+            img{
+                width: 385px;
+                height: auto;
+            }
+        }
+    }
+
+    .lower-header{
+        h4{
+            margin-top: 30px;
+            color: #a82c33;
+            font-weight: 500;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .internal-content{
+        p{
+            color: #fff;
+            font-family: majalla;
+            font-size: 18px;
+            padding-right: 60px;
+            line-height: 1.2;
+        }
+    }
+    .personal-details{
+        margin-top: 40px;
+        padding-right: 80px;
+        color: #fff;
+        h5{
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .name{
+            margin-left: 40px;
+            margin-bottom: 0px;
+        }
+        .role{
+            margin-left: 30px;
+        }
+        .email{
+            margin-left: 40px;
+        }
+    }
+}
+
+@media(min-width: 301px) and (max-width: 767px){
+    body{
+        height: 100vh !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        header{
+            .main-logo{
+                padding-top: 20px;
+                img{
+                    display: unset;
+                    width: 150px;
+                    height: auto;
+                }
+            }
+        }
+        .hero-box{
+            margin-top: 50px;
+            .hero-title{
+                margin-top: 25px;
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            .description{
+                padding: 0px;
+                p{
+                    font-size: 26px;
+                }
+            }
+            h4{
+                margin-top: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .social-list{
+                left: 45px;
+                bottom: 10px;
+            }
+            .address{
+                text-align: center;
+            }
+        }
+    }
+
+    .internal-body{
+        height: auto !important;
+        .internal-header{
+            .internal-main-logo{
+                margin-top: 20px !important;
+                img{
+                    width: 150px !important;
+                }
+            }
+        }
+        .lower-header{
+            text-align: center !important;
+            h4{
+                font-size: 25px;
+            }
+        }
+        .internal-content{
+            text-align: center;
+            p{
+                padding-right: 0px !important;
+            }
+        }
+        .personal-details{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            .name{
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .role{
+                margin-left: 10px;
+            }
+            .email{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media(min-width: 410px) and (max-width: 480px){
+    .social-list{
+        bottom: 55px !important;
+        left: 80px !important;
+        h6{
+            margin-left: -15px;
+        }
+    }
+}
+@media(min-width: 481px) and (max-width: 550px){
+    .social-list{
+        bottom: 55px !important;
+        left: 130px !important;
+        h6{
+            margin-left: -15px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px) and (max-width: 991px){
+    body{
+        background-repeat: round !important;
+        background-size: cover !important;
+        .hero-box{
+        text-align: center;
+        margin-top: 330px;
+        .description{
+            margin-top: 25px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            p{
+                font-size: 28px;
+            }
+        }
+        }
+        header{
+            .main-logo{
+                padding-top: 20px;
+                img{
+                    display: none;
+                    width: 150px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .social-list{
+        bottom: 55px !important;
+        left: 300px !important;
+    }
+
+    .internal-header{
+        .internal-main-logo{
+            margin-top: 20px !important;
+            img{
+                width: 150px !important;
+            }
+        }
+    }
+    .lower-header{
+        text-align: center !important;
+        margin-top: 50px;
+    }
+    .internal-content{
+        margin-top: 140px;
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 992px) and (max-width: 1199px){
+    .internal-body{
+        background-repeat: round !important;
+        background-size: cover !important;
+
+        .internal-header{
+            .internal-main-logo{
+                margin-top: 20px !important;
+                img{
+                    width: 285px !important;
+                }
+            }
+        }
+    }
+    .personal-details{
+        margin-bottom: 20px;
+    }
+    .lower-header{
+        h4{
+            margin-top: 50px !important;
+        }
+    }
+    .hero-box{
+        margin-top: 85px !important;
+        .hero-title{
+            font-size: 36px !important;
+        }
+        .description{
+            p{
+                font-size: 21px !important;
+            }
+        }
+        h4{
+            font-size: 25px !important;
+        }
+    }
+    .internal-content{
+        margin-top: 45px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1281px){
+    .internal-body{
+        background-repeat: round !important;
+        background-size: cover !important;
+    }
+    .lower-header{
+        h4{
+            margin-top: 45px !important;
+        }
+    }
+    .hero-box{
+        margin-top: 165px !important;
+    }
+}
+@media(max-width: 300px){
+    .personal-details{
+        div{
+            width: 100% !important;
+            text-align: center !important;
+        }
+    }
+    .internal-main-logo{
+        img{
+            width: 70px !important;
+        }
+    }
+    .internal-content{
+        .person-img{
+            width: 80% !important;
+            height: auto !important;
+        }
+        .qr-img{
+            width: 40% !important;
+            height: auto !important;
+            margin: 15px auto;
+        }
+    }
+    body{
+        height: 100vh !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        header{
+            .main-logo{
+                padding-top: 10px;
+                img{
+                    display: unset;
+                    width: 90px;
+                    height: auto;
+                }
+            }
+            .second-logo{
+                img{
+                    height: 50px;
+                }
+            }
+        }
+        .hero-box{
+            margin-top: 50px;
+            .hero-title{
+                margin-top: 25px;
+                margin-bottom: 40px;
+                text-align: center;
+                font-size: 30px;
+            }
+            .description{
+                padding: 0px;
+                p{
+                    font-size: 22px;
+                }
+            }
+            h4{
+                margin-top: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .social-list{
+                left: 45px;
+                bottom: 10px;
+                .social{
+                    margin-right: 5px;
+                }
+            }
+            .address{
+                text-align: center;
+                margin-right: 40px;
+            }
+        }
+    }
+
+    .internal-body{
+        height: auto !important;
+        .internal-header{
+            .internal-main-logo{
+                margin-top: 10px !important;
+                img{
+                    width: 90px !important;
+                }
+            }
+        }
+        .second-logo{
+            img{
+                height: 50px !important;
+            }
+        }
+        .lower-header{
+            text-align: center !important;
+            h4{
+                font-size: 25px;
+            }
+        }
+        .internal-content{
+            text-align: center;
+            p{
+                padding-right: 0px !important;
+            }
+        }
+        .personal-details{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            .name{
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .role{
+                margin-left: 10px;
+            }
+            .email{
+                margin-left: 20px;
+            }
+        }
+    }
+}
